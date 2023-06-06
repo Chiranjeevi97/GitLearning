@@ -1,0 +1,6 @@
+I used four new API's to run my code. They are, "mutex_lock", "mutex_unlock", "sem_post", "sem_wait".
+Mutex_lock and mutex_unlock are used as they allow a single thread to access the critical section whereas, "sem_wait" is used as it decrements the semaphore value and blocks the thread until the resource is available again., "sem_post" is used as it increments the semaphore value and if there are any threads waiting for the resource to execute, it awakes the thread to be executed.
+
+I have also used sleep() API, which is used to let the thread to be delayed for a specific amount of time.
+
+The current program gives a semaphore based solution for bounded-buffer problem using producer-consumer processes. The producer thread is responsible for pushing the word into the buffer, whereas the consumer thread is responsible for removing the word from the buffer. Initially, both the producer and consumer threads will be in sleep, whenever they are awaken, they execute their particular threads respectively.  
